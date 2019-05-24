@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		795136302290F7D500B77DF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7951362F2290F7D500B77DF8 /* AppDelegate.swift */; };
+		795136322290F7D500B77DF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795136312290F7D500B77DF8 /* ViewController.swift */; };
+		795136352290F7D500B77DF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795136332290F7D500B77DF8 /* Main.storyboard */; };
+		795136372290F7D600B77DF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795136362290F7D600B77DF8 /* Assets.xcassets */; };
+		7951363A2290F7D600B77DF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795136382290F7D600B77DF8 /* LaunchScreen.storyboard */; };
+		79AC805C2293859C006322E9 /* soundGirlSinging.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79AC80552293859B006322E9 /* soundGirlSinging.mp3 */; };
+		79AC805F2293859C006322E9 /* backsound_horor_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79AC80582293859C006322E9 /* backsound_horor_1.mp3 */; };
+		79AC80612293859C006322E9 /* soundLidcreak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79AC805A2293859C006322E9 /* soundLidcreak.mp3 */; };
+		79AC806522939AA6006322E9 /* bellSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79AC806322939AA6006322E9 /* bellSound.mp3 */; };
+		79AC806622939AA6006322E9 /* slamDoor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79AC806422939AA6006322E9 /* slamDoor.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7951362C2290F7D500B77DF8 /* NANO_Moving Door.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NANO_Moving Door.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7951362F2290F7D500B77DF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		795136312290F7D500B77DF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		795136342290F7D500B77DF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		795136362290F7D600B77DF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		795136392290F7D600B77DF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7951363B2290F7D600B77DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79AC80552293859B006322E9 /* soundGirlSinging.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = soundGirlSinging.mp3; path = ../../soundGirlSinging.mp3; sourceTree = "<group>"; };
+		79AC80582293859C006322E9 /* backsound_horor_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = backsound_horor_1.mp3; path = ../../backsound_horor_1.mp3; sourceTree = "<group>"; };
+		79AC805A2293859C006322E9 /* soundLidcreak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = soundLidcreak.mp3; path = ../../soundLidcreak.mp3; sourceTree = "<group>"; };
+		79AC806322939AA6006322E9 /* bellSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bellSound.mp3; path = ../../bellSound.mp3; sourceTree = "<group>"; };
+		79AC806422939AA6006322E9 /* slamDoor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = slamDoor.mp3; path = ../../slamDoor.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		795136292290F7D500B77DF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		795136232290F7D500B77DF8 = {
+			isa = PBXGroup;
+			children = (
+				7951362E2290F7D500B77DF8 /* NANO_Moving Door */,
+				7951362D2290F7D500B77DF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7951362D2290F7D500B77DF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7951362C2290F7D500B77DF8 /* NANO_Moving Door.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7951362E2290F7D500B77DF8 /* NANO_Moving Door */ = {
+			isa = PBXGroup;
+			children = (
+				79AC80582293859C006322E9 /* backsound_horor_1.mp3 */,
+				79AC80552293859B006322E9 /* soundGirlSinging.mp3 */,
+				79AC805A2293859C006322E9 /* soundLidcreak.mp3 */,
+				79AC806322939AA6006322E9 /* bellSound.mp3 */,
+				79AC806422939AA6006322E9 /* slamDoor.mp3 */,
+				7951362F2290F7D500B77DF8 /* AppDelegate.swift */,
+				795136312290F7D500B77DF8 /* ViewController.swift */,
+				795136332290F7D500B77DF8 /* Main.storyboard */,
+				795136362290F7D600B77DF8 /* Assets.xcassets */,
+				795136382290F7D600B77DF8 /* LaunchScreen.storyboard */,
+				7951363B2290F7D600B77DF8 /* Info.plist */,
+			);
+			path = "NANO_Moving Door";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7951362B2290F7D500B77DF8 /* NANO_Moving Door */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7951363E2290F7D600B77DF8 /* Build configuration list for PBXNativeTarget "NANO_Moving Door" */;
+			buildPhases = (
+				795136282290F7D500B77DF8 /* Sources */,
+				795136292290F7D500B77DF8 /* Frameworks */,
+				7951362A2290F7D500B77DF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NANO_Moving Door";
+			productName = "NANO_Moving Door";
+			productReference = 7951362C2290F7D500B77DF8 /* NANO_Moving Door.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		795136242290F7D500B77DF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Risma Fadillah";
+				TargetAttributes = {
+					7951362B2290F7D500B77DF8 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 795136272290F7D500B77DF8 /* Build configuration list for PBXProject "NANO_Moving Door" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 795136232290F7D500B77DF8;
+			productRefGroup = 7951362D2290F7D500B77DF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7951362B2290F7D500B77DF8 /* NANO_Moving Door */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7951362A2290F7D500B77DF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79AC805C2293859C006322E9 /* soundGirlSinging.mp3 in Resources */,
+				79AC805F2293859C006322E9 /* backsound_horor_1.mp3 in Resources */,
+				79AC806522939AA6006322E9 /* bellSound.mp3 in Resources */,
+				79AC806622939AA6006322E9 /* slamDoor.mp3 in Resources */,
+				7951363A2290F7D600B77DF8 /* LaunchScreen.storyboard in Resources */,
+				79AC80612293859C006322E9 /* soundLidcreak.mp3 in Resources */,
+				795136372290F7D600B77DF8 /* Assets.xcassets in Resources */,
+				795136352290F7D500B77DF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		795136282290F7D500B77DF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				795136322290F7D500B77DF8 /* ViewController.swift in Sources */,
+				795136302290F7D500B77DF8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		795136332290F7D500B77DF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				795136342290F7D500B77DF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		795136382290F7D600B77DF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				795136392290F7D600B77DF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7951363C2290F7D600B77DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7951363D2290F7D600B77DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7951363F2290F7D600B77DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PH8DHN7J5A;
+				INFOPLIST_FILE = "NANO_Moving Door/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dila.NANO-Moving-Door";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		795136402290F7D600B77DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PH8DHN7J5A;
+				INFOPLIST_FILE = "NANO_Moving Door/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dila.NANO-Moving-Door";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		795136272290F7D500B77DF8 /* Build configuration list for PBXProject "NANO_Moving Door" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7951363C2290F7D600B77DF8 /* Debug */,
+				7951363D2290F7D600B77DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7951363E2290F7D600B77DF8 /* Build configuration list for PBXNativeTarget "NANO_Moving Door" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7951363F2290F7D600B77DF8 /* Debug */,
+				795136402290F7D600B77DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 795136242290F7D500B77DF8 /* Project object */;
+}
