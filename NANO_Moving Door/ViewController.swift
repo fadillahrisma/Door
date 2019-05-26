@@ -20,8 +20,12 @@ class ViewController: UIViewController {
     // variabel untuk audio player
     var backsoundPlayer: AVAudioPlayer?
     var lidCreakPlayer: AVAudioPlayer?
-    //var bellPlayer: AVAudioPlayer?
+    var bellPlayer: AVAudioPlayer?
     var effectsPlayer: AVAudioPlayer?
+    var screamPlayer: AVAudioPlayer?
+    var childWhisper: AVAudioPlayer?
+    
+    
 
     
     // durasi animasi (detik)
@@ -64,7 +68,7 @@ class ViewController: UIViewController {
         scaleDoorImages = createImageArray(total: 7, imagePrefix: "scale")
         openDoorImages = createImageArray(total: 7, imagePrefix: "bigger")
         endDoorImages = createImageArray(total: 7, imagePrefix: "end")
-        
+        //endDoorImages = createImageArray(total: 12, imagePrefix: "end")
     }
 
     // fungsi untuk menggerakkan gambar pada array
@@ -107,11 +111,14 @@ class ViewController: UIViewController {
             numberOfClick = 2
         } else if numberOfClick == 2 {
             playGirlSinging()
+            playChildWhisper()
             animate(imageView: doorImageView, images: scaleDoorImages)
             doorImageView.image = UIImage(named: "scale_7")
             
             numberOfClick = 3
         } else if numberOfClick == 3 {
+            //playGirlSinging()
+            //playChildWhisper()
             //playSlamDoor()
             //backsoundPlayer?.stop()
             animate(imageView: doorImageView, images: openDoorImages)
@@ -119,8 +126,10 @@ class ViewController: UIViewController {
         
             numberOfClick = 4
         } else {
-            playSlamDoor()
             backsoundPlayer?.stop()
+            bellPlayer?.stop()
+            playSlamDoor()
+            playScream()
             animateCloseDoor(imageView: doorImageView, images: endDoorImages)
             doorImageView.image = UIImage(named: "end_7")
             
@@ -188,8 +197,8 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setActive(true)
             
             // For iOS 11
-            effectsPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-            effectsPlayer?.play()
+            bellPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            bellPlayer?.play()
             
         } catch let error {
             print(error.localizedDescription)
@@ -206,6 +215,38 @@ class ViewController: UIViewController {
             // For iOS 11
             effectsPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
             effectsPlayer?.play()
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func playScream() {
+        guard let url = Bundle.main.url(forResource: "scream", withExtension: "mp3") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            // For iOS 11
+            screamPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            screamPlayer?.play()
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func playChildWhisper() {
+        guard let url = Bundle.main.url(forResource: "childWhisper", withExtension: "mp3") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            // For iOS 11
+            childWhisper = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            childWhisper?.play()
             
         } catch let error {
             print(error.localizedDescription)

@@ -17,6 +17,8 @@
 		79AC80612293859C006322E9 /* soundLidcreak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79AC805A2293859C006322E9 /* soundLidcreak.mp3 */; };
 		79AC806522939AA6006322E9 /* bellSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79AC806322939AA6006322E9 /* bellSound.mp3 */; };
 		79AC806622939AA6006322E9 /* slamDoor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79AC806422939AA6006322E9 /* slamDoor.mp3 */; };
+		79D3689D2299FAB1001E09C8 /* scream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79D3689C2299FAB1001E09C8 /* scream.mp3 */; };
+		79D3689F229A00F2001E09C8 /* childWhisper.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79D3689E229A00F2001E09C8 /* childWhisper.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		79AC805A2293859C006322E9 /* soundLidcreak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = soundLidcreak.mp3; path = ../../soundLidcreak.mp3; sourceTree = "<group>"; };
 		79AC806322939AA6006322E9 /* bellSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bellSound.mp3; path = ../../bellSound.mp3; sourceTree = "<group>"; };
 		79AC806422939AA6006322E9 /* slamDoor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = slamDoor.mp3; path = ../../slamDoor.mp3; sourceTree = "<group>"; };
+		79D3689C2299FAB1001E09C8 /* scream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = scream.mp3; path = ../../scream.mp3; sourceTree = "<group>"; };
+		79D3689E229A00F2001E09C8 /* childWhisper.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = childWhisper.mp3; path = "../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/childWhisper.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				79AC805A2293859C006322E9 /* soundLidcreak.mp3 */,
 				79AC806322939AA6006322E9 /* bellSound.mp3 */,
 				79AC806422939AA6006322E9 /* slamDoor.mp3 */,
+				79D3689C2299FAB1001E09C8 /* scream.mp3 */,
+				79D3689E229A00F2001E09C8 /* childWhisper.mp3 */,
 				7951362F2290F7D500B77DF8 /* AppDelegate.swift */,
 				795136312290F7D500B77DF8 /* ViewController.swift */,
 				795136332290F7D500B77DF8 /* Main.storyboard */,
@@ -141,6 +147,8 @@
 				79AC805F2293859C006322E9 /* backsound_horor_1.mp3 in Resources */,
 				79AC806522939AA6006322E9 /* bellSound.mp3 in Resources */,
 				79AC806622939AA6006322E9 /* slamDoor.mp3 in Resources */,
+				79D3689F229A00F2001E09C8 /* childWhisper.mp3 in Resources */,
+				79D3689D2299FAB1001E09C8 /* scream.mp3 in Resources */,
 				7951363A2290F7D600B77DF8 /* LaunchScreen.storyboard in Resources */,
 				79AC80612293859C006322E9 /* soundLidcreak.mp3 in Resources */,
 				795136372290F7D600B77DF8 /* Assets.xcassets in Resources */,
