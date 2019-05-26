@@ -24,6 +24,10 @@ class ViewController: UIViewController {
     var effectsPlayer: AVAudioPlayer?
     var screamPlayer: AVAudioPlayer?
     var childWhisper: AVAudioPlayer?
+    var knifeScrape: AVAudioPlayer?
+    var heartbeat: AVAudioPlayer?
+    var iWillKillYou: AVAudioPlayer?
+    
     
     
 
@@ -67,8 +71,8 @@ class ViewController: UIViewController {
         farDoorImages = createImageArray(total: 7, imagePrefix: "far")
         scaleDoorImages = createImageArray(total: 7, imagePrefix: "scale")
         openDoorImages = createImageArray(total: 7, imagePrefix: "bigger")
-        endDoorImages = createImageArray(total: 7, imagePrefix: "end")
-        //endDoorImages = createImageArray(total: 12, imagePrefix: "end")
+        //endDoorImages = createImageArray(total: 7, imagePrefix: "end")
+        endDoorImages = createImageArray(total: 13, imagePrefix: "end")
     }
 
     // fungsi untuk menggerakkan gambar pada array
@@ -81,7 +85,7 @@ class ViewController: UIViewController {
     }
     
     func animateCloseDoor(imageView: UIImageView, images: [UIImage]) {
-        imageView.animationDuration = 0.1
+        imageView.animationDuration = 0.2
         imageView.animationRepeatCount = 1
         imageView.animationImages = images
         imageView.startAnimating()
@@ -105,19 +109,22 @@ class ViewController: UIViewController {
         // jika animasi pintu terbuka sudah dijalankan, maka tap berikutnya jalankan animasi menjauh
         else if numberOfClick == 1 {
             playBellSound()
+            playChildWhisper()
             animate(imageView: doorImageView, images: farDoorImages)
             doorImageView.image = UIImage(named: "far_7")
             
             numberOfClick = 2
         } else if numberOfClick == 2 {
-            playGirlSinging()
-            playChildWhisper()
+            //playGirlSinging()
+            playKnifeScrape()
+            playHeartBeat()
+            //playChildWhisper()
             animate(imageView: doorImageView, images: scaleDoorImages)
             doorImageView.image = UIImage(named: "scale_7")
             
             numberOfClick = 3
         } else if numberOfClick == 3 {
-            //playGirlSinging()
+            playGirlSinging()
             //playChildWhisper()
             //playSlamDoor()
             //backsoundPlayer?.stop()
@@ -127,11 +134,13 @@ class ViewController: UIViewController {
             numberOfClick = 4
         } else {
             backsoundPlayer?.stop()
+            heartbeat?.stop()
             bellPlayer?.stop()
             playSlamDoor()
             playScream()
+            //playLastStatement()
             animateCloseDoor(imageView: doorImageView, images: endDoorImages)
-            doorImageView.image = UIImage(named: "end_7")
+            doorImageView.image = UIImage(named: "end_13")
             
             AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
         }
@@ -247,6 +256,55 @@ class ViewController: UIViewController {
             // For iOS 11
             childWhisper = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
             childWhisper?.play()
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func playKnifeScrape() {
+        guard let url = Bundle.main.url(forResource: "knifeScrape", withExtension: "mp3") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            // For iOS 11
+            knifeScrape = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            knifeScrape?.play()
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func playHeartBeat() {
+        guard let url = Bundle.main.url(forResource: "heartbeat", withExtension: "mp3") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            // For iOS 11
+            heartbeat = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            heartbeat?.play()
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func playLastStatement() {
+        guard let url = Bundle.main.url(forResource: "iWillKillYou", withExtension: "mp3") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            
+            // For iOS 11
+            iWillKillYou = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            iWillKillYou?.play()
             
         } catch let error {
             print(error.localizedDescription)
