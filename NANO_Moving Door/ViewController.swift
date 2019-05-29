@@ -27,6 +27,8 @@ class ViewController: UIViewController {
     var knifeScrape: AVAudioPlayer?
     var heartbeat: AVAudioPlayer?
     var iWillKillYou: AVAudioPlayer?
+    var girlSinging: AVAudioPlayer?
+    
     
     
     
@@ -98,6 +100,7 @@ class ViewController: UIViewController {
         // saat pertama aplikasi dibuka, maka jalankan animasi pintu terbuka
         if numberOfClick == 0 {
             playLidCreak()
+            playHeartBeat()
             animate(imageView: doorImageView, images: closeDoorImages)
             doorImageView.image = UIImage(named: "close_7")
             let generator = UIImpactFeedbackGenerator(style: .heavy)
@@ -115,19 +118,15 @@ class ViewController: UIViewController {
             
             numberOfClick = 2
         } else if numberOfClick == 2 {
-            //playGirlSinging()
-            playKnifeScrape()
-            playHeartBeat()
+            playGirlSinging()
+            //playKnifeScrape()
             //playChildWhisper()
             animate(imageView: doorImageView, images: scaleDoorImages)
             doorImageView.image = UIImage(named: "scale_7")
             
             numberOfClick = 3
         } else if numberOfClick == 3 {
-            playGirlSinging()
-            //playChildWhisper()
-            //playSlamDoor()
-            //backsoundPlayer?.stop()
+            playKnifeScrape()
             animate(imageView: doorImageView, images: openDoorImages)
             doorImageView.image = UIImage(named: "bigger_7")
         
@@ -136,9 +135,14 @@ class ViewController: UIViewController {
             backsoundPlayer?.stop()
             heartbeat?.stop()
             bellPlayer?.stop()
+            girlSinging?.stop()
             playSlamDoor()
             playScream()
-            //playLastStatement()
+            let when = DispatchTime.now() + 4
+            DispatchQueue.main.asyncAfter(deadline: when) {
+                self.playLastStatement()
+            }
+            
             animateCloseDoor(imageView: doorImageView, images: endDoorImages)
             doorImageView.image = UIImage(named: "end_13")
             
@@ -190,8 +194,8 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setActive(true)
 
             // For iOS 11
-            effectsPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-            effectsPlayer?.play()
+            girlSinging = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            girlSinging?.play()
 
         } catch let error {
             print(error.localizedDescription)
@@ -270,8 +274,8 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setActive(true)
             
             // For iOS 11
-            knifeScrape = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-            knifeScrape?.play()
+            effectsPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            effectsPlayer?.play()
             
         } catch let error {
             print(error.localizedDescription)
@@ -310,7 +314,6 @@ class ViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
-
     
     
 }
